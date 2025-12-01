@@ -1,41 +1,33 @@
-Towers Of Hanoi Solver
-Rules:
-a) There are three Pillars (Pillar1, Pillar2, Pillar3).
-b) There are N number of disks of increasing size (disk size is indicated by an integer).
-c) At the start, all disks are stacked on one of the pillars.
-d) At no point can a disk of larger size be placed above a disk of smaller size (including
-the start state).
-e) You have to move all disks from the start pillar to a target pillar.
-f) Only one disk can be moved at a time.
-Note: You can change the parameters: number of disks, staring and ending disk.
-Sample Run:
-Hanoi mySolver = new Hanoi(3,1,3);
-//the first parameter is the number of disks
-//the second parameter is the start pillar
-//the third parameter is the target
-The output should be:
-My Solution is:
-t0 Pillar1: 3 2 1
-t0 Pillar2:
-t0 Pillar3:
-t1 Pillar1: 3 2
-t1 Pillar2:
-t1 Pillar3: 1
-t2 Pillar1: 3
-t2 Pillar2: 2
-t2 Pillar3: 1
-t3 Pillar1: 3
-t3 Pillar2: 2 1
-t3 Pillar3:
-t4 Pillar1:
-t4 Pillar2: 2 1
-t4 Pillar3: 3
-t5 Pillar1: 1
-t5 Pillar2: 2
-t5 Pillar3: 3
-t6 Pillar1: 1
-t6 Pillar2:
-t6 Pillar3: 3 2
-t7 Pillar1:
-t7 Pillar2:
-t7 Pillar3: 3 2 1
+# TowerOfHanoi
+
+## Overview
+**TowerOfHanoi** is a Java program that solves the classic Tower of Hanoi puzzle for any number of disks. The program demonstrates **recursion**, **arrays as stacks**, and **algorithmic problem-solving** by moving disks between three pillars while following the rules of the puzzle:
+
+1. Only one disk can be moved at a time.
+2. Each move consists of taking the upper disk from one pillar and placing it on another pillar.
+3. No disk may be placed on top of a smaller disk.
+
+This project highlights the use of **object-oriented programming**, **data structures**, and **step-by-step algorithm visualization**.
+
+---
+
+## Features
+- Solve Tower of Hanoi for any number of disks.
+- Display the state of all three pillars after each move.
+- Keep track of the number of moves (time steps).
+- Works for any starting and target pillars.
+
+---
+
+## Classes
+1. **Hanoi** – Main class that implements the solution using recursion and arrays to represent pillars.
+   - Tracks the number of disks on each pillar.
+   - Prints the state of the pillars after each move.
+   - Calculates and displays the total number of steps required.
+
+---
+
+## How to Run
+1. Clone the repository:
+```bash
+git clone https://github.com/<ShaheerAli01>/TowerOfHanoi.git
